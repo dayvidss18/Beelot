@@ -1,0 +1,262 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Julius Sans One", sans-serif;
+}
+.logo{
+    display: flex;
+    text-decoration: none;
+    color: black;
+    align-items: center;
+    font-size: 24px;
+}
+
+.navbar{
+    display: flex;
+    justify-content: center;
+    background-color: #EBC748;
+    padding: .5rem;
+    gap: 50%;
+}
+.navbar_lista{
+    display: flex;
+    flex-direction: row;
+    padding: .5rem;
+    gap: .9rem;
+    text-decoration: none;
+    list-style: none;
+    align-items: center;
+    font-size: 20px;
+}
+.navbar_lista a {
+    text-decoration: none;
+    color: black;
+}
+.navbar_lista a:hover{
+    text-decoration: underline;
+}
+body{
+    background-color: #ECE5A2;
+}
+.container_principal{
+    display: flex;
+    height: 110vh;
+    flex-direction: column;
+    align-items: center;
+}
+.lista_blocos{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 2rem;
+    gap: 6.7rem;
+}
+.bloco{
+    display: flex;
+    flex-direction: column;
+    background-color: #EBC748;
+    margin-bottom: 2.5rem;
+    padding: 1rem;
+    width: 350px;
+    height: 360px;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+
+}
+.bloco p{
+    align-items: center;
+    display: flex;
+    text-align: center;
+    margin-top: 3rem;
+    font-size: 20px;
+    
+}
+.bloco button{
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    width: 230px;
+    padding: 10px;
+    background-color: #EEE383;
+    border-radius: 10px;
+
+}
+.bloco a{
+    text-decoration: none;
+    color: black;
+}
+.bloco_img{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: .5rem;
+}
+.container_1{
+    width: 1300px;
+    display: flex;
+    background-color: #EBC748;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    border-radius: 10px;
+}
+.hexagono_abelha{
+    padding: .5rem;
+}
+.fala_abelha{
+    background-color:#ECE5A2;
+    padding: 3rem;
+    border-radius: 10px;
+}
+.fala_abelha img{
+    padding: 1rem;
+}
+.container_secundario{
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.container_2{
+    width: 1300px;
+    height: 600px;
+    margin-top: 2rem;
+    display: flex;
+    background-color: #EBC748;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+}
+.container_2 img{
+    margin-top: 1rem;
+}
+/* Inixio da Pagina de produtos*/
+.bloco_produtos{
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    margin: 2.5rem;
+    flex-direction: row;
+    gap: 1rem;
+}
+.produto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    background-color: #EBC748;
+    border-radius: 10px;
+    width: 300px;
+    height: 340px;
+}
+.produto img{
+    border-radius: 10px;
+    width: 250px;
+    height: 240px;
+}
+.produto p{
+    font-size: 20px;
+    text-align: center;
+    padding: .5rem;
+}
+.produtos_botao img{
+    width: 30px;
+    height: 30px;
+}
+.produtos_botao{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: .8rem;
+}
+.produtos_botao button{
+    display: flex;
+    align-items: center;
+    background-color:#ECE5A2;
+    padding: .5rem;
+    height: 40px;
+    border-radius: 10px;
+    border: 4px;
+}
+
+.produto a{
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-weight: 600;
+}
+/*Inico carrinho*/
+.container_carrinho{
+    height: 100vh;
+}
+.secao_carrinho{
+    height: 200px;
+}
+.carrinho{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: .5rem;
+    gap: .5rem;
+}
+.carrinho input{
+    padding: .5rem;
+    width: 400px;
+    background-color: #ECE5A2;
+    border-radius: 10px;
+
+}
+.carrinho button{
+    background-color: #EBC748;
+    padding: .5rem;
+    border: 1px solid;
+    border-radius: 10px;
+}
+#itensCarrinho{
+    display: flex;
+    justify-content: center;
+    border: 1px solid;
+    padding: 2rem;
+    width: 500px;
+    height: 200px;
+
+}
+
+
+
+
+
+.rodape{
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+    background-color: #EBC748;
+    height: 4%;
+}
+.rodape_conteudo{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.rodape_conteudo h1{
+    font-size: 24px;
+    margin-top: 1rem;
+}
+.rodape_conteudo p{
+    padding: 1rem;
+}
+.rodape_conteudo a{
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    padding: .5rem;
+}
+.rodape_conteudo a:hover{
+    text-decoration: underline;
+}

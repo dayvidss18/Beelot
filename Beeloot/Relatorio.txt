@@ -1,0 +1,5 @@
+A BeeLoot foi desenvolvida pra ser uma landing page voltada para o conhecimento da marca e possivel compra do produto, trazendo cores solidas e uma navegabilidade interessante,
+Com o objetivo de conhecimento tem textos descitivos sobre o produto e como ele vai afetar a sua qualidade de vida,
+com um lista de produtos com varias opções de produtos.
+A area do carrinho Possui metodos de adicionar um item, Remover e ver o carrinho.
+Uma serie de melhorias devem sem implementadas junto ao projeto, como adicionar um item diretamnete da pagina de produtos e um carrinho com melhor visualização dos itens.

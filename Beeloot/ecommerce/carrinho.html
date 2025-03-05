@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/ecommerce/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap" rel="stylesheet">
+    <title>Carrinho</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="logo"><img src="/images/honeybee_17282868 (1) 1.png" alt="logo beelot">BEELOOT</a>
+            <ul class="navbar_lista">
+                <li><a href="/ecommerce/index.html">SOBRE NÓS</a></li>
+                <li><a href="produtos.html">PRODUTOS</a></li>
+                <li><a href="#">CONTATO</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="container_carrinho">
+            <div class="carrinho" id="secaoCarrinho">
+                <label for="nomeProdutoCarrinho">Nome do produto:</label>
+                <input type="text" id="nomeProdutoCarrinho">
+                <label for="precoProdutoCarrinho">Preço Do produto:</label>
+                <input type="text" id="precoProdutoCarrinho">
+                <button onclick="addCarrinho()">Adicionar ao carrinho</button>
+                <button onclick="removerCarrinho()">Remover</button>
+                <button onclick="verCarrinho()">Ver Carrinho</button>
+
+                <div id="itensCarrinho"></div>
+
+
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="rodape">
+            <div class="rodape_conteudo">
+                <p>Copyright</p>
+                <a href="#">Sobre Nós</a>
+                <a href="#">Instagram</a>
+                <a href="#">Facebook</a>
+                <a href="#">TikTok</a>
+                <h1>Aviso Importante</h1>
+                <p>
+                    A empresa BEELOOT é totalmente fictícia. Esta página foi criada exclusivamente para fins educacionais por um estudante de desenvolvimento de software. Não há qualquer intenção lucrativa ou comercial associada a este projeto.
+                     Qualquer semelhança com empresas reais é mera coincidência.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="/ecommerce/main.js"></script>
+</body>
+</html>

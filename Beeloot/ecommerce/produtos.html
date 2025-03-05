@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap" rel="stylesheet">
+    <title>Produtos</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="logo"><img src="/images/honeybee_17282868 (1) 1.png" alt="logo beelot">BEELOOT</a>
+            <ul class="navbar_lista">
+                <li><a href="/ecommerce/index.html">SOBRE NÓS</a></li>
+                <li><a href="/ecommerce/index.html">PRODUTOS</a></li>
+                <li><a href="#">CONTATO</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="sessao_produtos">
+            <div class="bloco_produtos">
+                <div class="produto">
+                    <img src="/images/Designer (8) 1.png" alt="">
+                    <p id="nomeProduto1">mel beeloot 600ml</p>
+                    <p id="precoProduto1">R$29,99</p>
+                    <div class="produtos_botao">
+                        <button onclick="addCarrinho()">
+                            <a href="carrinho.html">COMPRAR</a>
+                        </button>
+                        <button onclick="addCarrinho()">
+                            <a href="#">
+                                <img src="/images/shopping-cart_1346745.png" alt="" width="20px" height="20px">
+                            </a>
+                        </button>
+                    </div>
+                </div>
+                <div class="produto">
+                    <img src="/images/Designer (13) 1.png" alt="">
+                    <p id="nomeProduto2">kit beeloot hair 500ml</p>
+                    <p id="precoProduto2">R$59,99</p>
+                    <div class="produtos_botao">
+                        <button>
+                            <a href="carrinho.html">COMPRAR</a>
+                        </button>
+                        <button onclick="addCarrinho()">
+                            <a href="#">
+                                <img src="/images/shopping-cart_1346745.png" alt="" width="20px" height="20px">
+                            </a>
+                        </button>
+                    </div>
+                </div>
+                <div class="produto">
+                    <img src="/images/Designer (14) 1.png" alt="">
+                    <p id="nomeProduto3">sabonete beeloot mel 60g</p>
+                    <p id="precoProduto3">R$10,99</p>
+                    <div class="produtos_botao">
+                        <button>
+                            <a href="carrinho.html">COMPRAR</a>
+                        </button>
+                        <button onclick="addCarrinho()">
+                            <a href="#">
+                                <img src="/images/shopping-cart_1346745.png" alt="" width="20px" height="20px">
+                            </a>
+                        </button>
+                    </div>
+                </div>
+                <div class="produto">
+                    <img src="/images/Designer (9) 1.png" alt="">
+                    <p id="nomeProduto4">biscoitos beeloot sabor mel 200g</p>
+                    <p id="precoProduto4">R$6,99</p>
+                    <div class="produtos_botao">
+                        <button>
+                            <a href="carrinho.html">COMPRAR</a>
+                        </button>
+                        <button onclick="addCarrinho()">
+                            <a href="#">
+                                <img src="/images/shopping-cart_1346745.png" alt="" width="20px" height="20px">
+                            </a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="rodape">
+            <div class="rodape_conteudo">
+                <p>Copyright</p>
+                <a href="#">Sobre Nós</a>
+                <a href="#">Instagram</a>
+                <a href="#">Facebook</a>
+                <a href="#">TikTok</a>
+                <h1>Aviso Importante</h1>
+                <p>
+                    A empresa BEELOOT é totalmente fictícia. Esta página foi criada exclusivamente para fins educacionais por um estudante de desenvolvimento de software. Não há qualquer intenção lucrativa ou comercial associada a este projeto.
+                     Qualquer semelhança com empresas reais é mera coincidência.
+                </p>
+            </div>
+        </div>
+    </footer>
+    <script src="/ecommerce/main.js"></script>
+    <script>
+        var carrinho = [];
+
+        function escolhaProduto(nomeProdutoId, precoProdutoId) {
+            let nomeProduto = document.getElementById(nomeProdutoId).innerText;
+            let precoProduto = document.getElementById(precoProdutoId).innerText;
+            const valor = Number(precoProduto.replace('R$', '').trim());
+
+            carrinho.push({ nome: nomeProduto, preco: valor });
+            alert(JSON.stringify(carrinho));
+        }
+    </script>
+</body>
+</html>

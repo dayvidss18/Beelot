@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../../../../../Nova pasta"
+		},
+		{
+			"path": "../../.."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Faculdade"
+	}
+}
